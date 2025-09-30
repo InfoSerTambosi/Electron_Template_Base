@@ -1,0 +1,82 @@
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+#flex-container {
+    display: flex;
+    background-color: white;
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    height: auto;
+}
+
+#sx-panel {
+    background-color: white;
+    color: black;
+    width: 0%;
+    margin: 10px;
+    text-align: center;            
+    font-size: 30px;
+}
+
+#center-panel {
+    background-color: white;
+    color: black;
+    width: 70%;
+    margin: 10px;
+    padding: 10px;
+    text-align: left;
+    font-size: 20px;
+}
+
+#dx-panel {
+    background-color: rgba(255, 255, 255, 0.86);
+    color: black;
+    width: 30%;
+    margin: 10px;
+    text-align: center;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+#footer {
+    display: flex;
+    background-color: rgb(72, 72, 72);
+    color: white;
+    margin: 0px;
+    padding: 5px;
+}
+
+#ris{
+    font-size: 28px;
+}
+
+.input_style{
+    font-size: 28px;
+    width: 50%;
+}
+
+.myBtn {
+    background-color: #04AA6D; /* Green */
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+.myBtn:active {
+  background-color: #639464;
+}

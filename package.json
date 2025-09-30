@@ -1,0 +1,58 @@
+{
+  "name": "basic_workspace_template",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder --x64",
+    "dist:linux": "electron-builder --linux --x64",
+    "dist:win": "electron-builder --win --x64",
+    "dist:mac": "electron-builder --mac --x64",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": {
+    "name": "Nome-Cognome",
+    "email": "nome.cognome@tambosi.tn.it",
+    "url": "https://tambosi.tn.it/struttura/54-2/istituto-tecnico-economico-antonio-tambosi-corso-serale/"
+  },
+  "homepage": "https://tambosi.tn.it/struttura/54-2/istituto-tecnico-economico-antonio-tambosi-corso-serale/",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "electron": "^38.1.0",
+    "electron-builder": "^26.0.12"
+  },
+  "build": {
+    "appId": "com.tambosi.my-new-app",
+    "copyright": "Copyright © 2025 ITE-Tambosi",
+    "productName": "New Electron App",
+    "directories": {
+      "output": "dist",
+      "buildResources": "build"
+    },
+    "asar": true,
+    "win": {
+      "target": [
+        "nsis"
+      ]
+    },
+    "linux": {
+      "target": [
+        "AppImage",
+        "deb"
+      ],
+      "category": "Utility"
+    },
+    "mac": {
+      "category": "public.app-category.developer-tools"
+    }
+  },
+  "bugs": {
+    "name": "A. Rosa",
+    "email": "alessandro.rosa@tambosi.tn.it",
+    "url": "https://tambosi.tn.it/struttura/54-2/istituto-tecnico-economico-antonio-tambosi-corso-serale/"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.2"
+  }
+}
